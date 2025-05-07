@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hari Restaurant</string>
+    <string name="navigation_drawer_open">Mở ngăn điều hướng</string>
+    <string name="navigation_drawer_close">Đóng ngăn điều hướng</string>
+    <string name="nav_header_title">Nhà Hàng Hari</string>
+    <string name="nav_header_subtitle">restaurant@gmail.com</string>
+    <string name="nav_header_desc">Điều hướng</string>
+    <string name="action_settings">Cài đặt</string>
+
+    <string name="menu_home">Trang chủ</string>
+    <string name="menu_menu">Thực đơn</string>
+    <string name="menu_cart">Giỏ hàng</string>
+    <string name="menu_reservation">Đặt bàn</string>
+    <string name="menu_takeaway">Giao hàng</string>
+    <string name="menu_settings">Cài đặt</string>
+    <string name="menu_gallery">Bộ sưu tập</string>
+    <string name="menu_slideshow">Trình chiếu</string>
+    <string name="menu_orders">Đơn hàng</string>
+    <string name="menu_current_orders">Đơn hiện tại</string>
+    <string name="menu_order_history">Lịch sử đơn hàng</string>
+    <string name="image_test">Kiểm tra hình ảnh</string>
+    
+    <!-- Menu screen -->
+    <string name="menu_categories_title">Danh mục</string>
+    <string name="menu_items_title">Thực đơn</string>
+    <string name="menu_all_items">Tất cả món</string>
+    <string name="add_to_cart">Thêm vào giỏ</string>
+    <string name="search_menu_hint">Tìm kiếm món ăn...</string>
+    <string name="search_no_results">Không tìm thấy món ăn nào phù hợp với \"%1$s\"</string>
+    <string name="clear_search">Xóa tìm kiếm</string>
+    <string name="search">Tìm kiếm</string>
+    
+    <!-- Cart screen -->
+    <string name="cart_title">Giỏ hàng của bạn</string>
+    <string name="your_cart">Giỏ hàng của bạn</string>
+    <string name="empty_cart_title">Giỏ hàng trống</string>
+    <string name="empty_cart_message">Bạn chưa thêm món ăn nào vào giỏ hàng</string>
+    <string name="empty_cart">Giỏ hàng trống</string>
+    <string name="browse_menu">Xem thực đơn</string>
+    <string name="total">Tổng cộng</string>
+    <string name="checkout">Thanh toán</string>
+    
+    <!-- Reservation screen -->
+    <string name="reservation_title">Đặt bàn</string>
+    <string name="reservation_subtitle">Đặt bàn trước để có trải nghiệm tốt nhất</string>
+    <string name="personal_info">Thông tin cá nhân</string>
+    <string name="date_and_time">Ngày và giờ</string>
+    <string name="date">Ngày</string>
+    <string name="time">Giờ</string>
+    <string name="reservation_details">Chi tiết đặt bàn</string>
+    <string name="guest_count">Số người</string>
+    <string name="select_table">Chọn bàn</string>
+    <string name="no_tables_available">Không có bàn phù hợp</string>
+    <string name="special_requests">Yêu cầu đặc biệt</string>
+    <string name="reserve_table">Đặt bàn</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="cancel">Hủy</string>
+    
+    <!-- Settings screen -->
+    <string name="settings">Cài đặt</string>
+    <string name="profile">Hồ sơ cá nhân</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="sign_out">Đăng xuất</string>
+    <string name="notifications">Thông báo</string>
+    <string name="push_notifications">Thông báo đẩy</string>
+    <string name="email_notifications">Thông báo qua email</string>
+    <string name="email_notifications_description">Nhận thông báo về khuyến mãi và cập nhật</string>
+    <string name="app_settings">Cài đặt ứng dụng</string>
+    <string name="dark_mode">Chế độ tối</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="about">Giới thiệu</string>
+    <string name="app_info">Thông tin ứng dụng</string>
+    <string name="version">Phiên bản %1$s</string>
+    
+    <!-- Auth screens -->
+    <string name="login">Đăng nhập</string>
+    <string name="login_title">Đăng nhập tài khoản</string>
+    <string name="register">Đăng ký</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="full_name">Họ tên</string>
+    <string name="name">Họ tên</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="create_account">Tạo tài khoản</string>
+    <string name="welcome">Chào mừng quay trở lại</string>
+    <string name="welcome_message">Đăng nhập để tiếp tục</string>
+    <string name="register_message">Tạo tài khoản mới</string>
+    <string name="no_account">Bạn chưa có tài khoản?</string>
+    <string name="have_account">Bạn đã có tài khoản?</string>
+    <string name="reset_password">Khôi phục mật khẩu</string>
+    <string name="reset_password_message">Nhập email để nhận mã khôi phục</string>
+    <string name="send">Gửi</string>
+    <string name="verification_code">Mã xác nhận</string>
+    <string name="enter_code">Nhập mã xác nhận được gửi đến email của bạn</string>
+    <string name="verify">Xác nhận</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="create_password">Tạo mật khẩu mới</string>
+    <string name="save">Lưu</string>
+    <string name="guest">Khách</string>
+    
+    <!-- Error messages -->
+    <string name="error_loading_data">Không thể tải dữ liệu: %1$s</string>
+    <string name="error_empty_email">Email không được để trống</string>
+    <string name="error_empty_password">Mật khẩu không được để trống</string>
+    <string name="error_empty_name">Họ tên không được để trống</string>
+    <string name="error_password_mismatch">Mật khẩu xác nhận không khớp</string>
+    <string name="error_invalid_email">Email không hợp lệ</string>
+    <string name="error_short_password">Mật khẩu phải có ít nhất 6 ký tự</string>
+    <string name="retry">Thử lại</string>
+
+    <!-- User greeting -->
+    <string name="greeting">Xin chào, %1$s</string>
+
+    <!-- New strings for cart screen -->
+    <string name="item_quantity">Số lượng: %1$d</string>
+    <string name="item_price">Giá: %1$s</string>
+    <string name="remove_item">Xóa</string>
+    <string name="cart_subtotal">Tạm tính: %1$s</string>
+    <string name="cart_tax">Thuế (10%%): %1$s</string>
+    <string name="cart_total">Tổng cộng: %1$s</string>
+    
+    <!-- Takeaway related strings -->
+    <string name="takeaway_title">Mang đi</string>
+    <string name="takeaway_success">Đơn hàng mang đi đã được đặt thành công!</string>
+    <string name="takeaway_instructions">Chọn đặt bàn hoặc mang đi:</string>
+    <string name="add_to_cart_small">+</string>
+    <string name="cart_summary">Tóm tắt giỏ hàng</string>
+    <string name="order_now">Đặt ngay</string>
+    <string name="cart_items">Món trong giỏ</string>
+    <string name="continue_shopping">Tiếp tục mua sắm</string>
+    <string name="order_details">Chi tiết đơn hàng</string>
+    <string name="delivery_info">Thông tin giao hàng</string>
+    <string name="address">Địa chỉ</string>
+    <string name="place_order">Đặt đồ ăn</string>
+    
+    <!-- New strings for reservation screen -->
+    <string name="reservation_date">Chọn ngày</string>
+    <string name="reservation_time">Chọn giờ</string>
+    <string name="reservation_guests">Số lượng khách</string>
+    <string name="reservation_name">Họ tên</string>
+    <string name="reservation_email">Email</string>
+    <string name="reservation_phone">Số điện thoại</string>
+    <string name="reservation_notes">Yêu cầu đặc biệt (nếu có)</string>
+    <string name="reservation_confirm">Xác nhận đặt bàn</string>
+    <string name="reservation_success">Đặt bàn thành công!</string>
+    
+    <!-- New strings for settings screen -->
+    <string name="settings_language_english">Tiếng Anh</string>
+    <string name="settings_language_vietnamese">Tiếng Việt</string>
+    <string name="settings_notification">Thông báo</string>
+    <string name="settings_terms">Điều khoản sử dụng</string>
+    <string name="settings_privacy">Chính sách bảo mật</string>
+    <string name="settings_logout">Đăng xuất</string>
+    
+    <!-- Auth message strings -->
+    <string name="login_required">Vui lòng đăng nhập để tiếp tục</string>
+    <string name="back">Quay lại</string>
+    <string name="auth_error">Lỗi xác thực</string>
+    
+    <!-- Order screen strings -->
+    <string name="orders_title">Đơn hàng</string>
+    <string name="current_orders">Đơn hiện tại</string>
+    <string name="order_history">Lịch sử đơn hàng</string>
+    <string name="no_current_orders">Bạn không có đơn hàng nào đang xử lý</string>
+    <string name="no_order_history">Bạn chưa có lịch sử đặt hàng</string>
+    <string name="order_number">Mã đơn: #%1$s</string>
+    <string name="order_date">Ngày đặt: %1$s</string>
+    <string name="order_status">Trạng thái: %1$s</string>
+    <string name="order_total">Tổng tiền: %1$s</string>
+    <string name="order_items">Các món</string>
+    <string name="order_item_quantity">x%1$d</string>
+    <string name="status_pending">Đang xử lý</string>
+    <string name="status_preparing">Đang chuẩn bị</string>
+    <string name="status_ready">Sẵn sàng</string>
+    <string name="status_delivered">Đã giao hàng</string>
+    <string name="status_completed">Hoàn thành</string>
+    <string name="status_cancelled">Đã hủy</string>
+    <string name="view_details">Xem chi tiết</string>
+    <string name="track_order">Theo dõi đơn hàng</string>
+    <string name="cancel_order">Hủy đơn hàng</string>
+    <string name="reorder">Đặt lại</string>
+    
+    <!-- Takeaway order strings -->
+    <string name="menu_takeaway_orders">Đơn mang về</string>
+    <string name="takeaway_order_title">Đơn mang về</string>
+    <string name="takeaway_order_details">Chi tiết đơn mang về</string>
+    <string name="delivery_address">Địa chỉ giao hàng</string>
+    <string name="payment_method">Phương thức thanh toán</string>
+    <string name="payment_status">Trạng thái thanh toán</string>
+    <string name="cash_on_delivery">Thanh toán khi nhận hàng</string>
+    <string name="online_payment">Thanh toán trực tuyến</string>
+    <string name="payment_completed">Đã thanh toán</string>
+    <string name="payment_pending">Chờ thanh toán</string>
+    <string name="estimated_delivery">Thời gian giao hàng dự kiến</string>
+    <string name="confirm_cancel_order">Xác nhận hủy đơn</string>
+    <string name="confirm_cancel_message">Bạn có chắc chắn muốn hủy đơn hàng này?</string>
+    <string name="yes_cancel">Đồng ý, hủy đơn</string>
+    <string name="no_keep_order">Không, giữ lại</string>
+    <string name="order_cancelled">Đơn hàng đã được hủy</string>
+    <string name="takeaway_order_note">Ghi chú đơn hàng</string>
+    <string name="item_count">%1$d món</string>
+    <string name="customer_information">Thông tin khách hàng</string>
+    <string name="delivery_information">Thông tin giao hàng</string>
+    <string name="note_optional">Ghi chú (không bắt buộc)</string>
+</resources>

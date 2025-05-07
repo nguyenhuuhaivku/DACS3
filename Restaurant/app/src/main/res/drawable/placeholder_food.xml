@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Background -->
+    <path
+        android:fillColor="#EAEAEA"
+        android:pathData="M0,0h200v200h-200z" />
+
+    <!-- Plate and Fork Design -->
+    <path
+        android:fillColor="#CCCCCC"
+        android:pathData="M100,50 A50,50 0 1,1 100,150 A50,50 0 1,1 100,50z
+                         M85,90 L85,65 A15,15 0 0,1 115,65 L115,90
+                         M100,90 L100,135" />
+</vector> 

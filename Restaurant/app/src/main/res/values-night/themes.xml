@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Restaurant" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/gold</item>
+        <item name="colorPrimaryVariant">@color/dark_gold</item>
+        <item name="colorOnPrimary">@color/cream_white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/light_gold</item>
+        <item name="colorSecondaryVariant">@color/dark_gold</item>
+        <item name="colorOnSecondary">@color/rich_black</item>
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/rich_black</item>
+        <item name="colorSurface">@color/rich_black</item>
+        <item name="colorOnSurface">@color/cream_white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <!-- Edge-to-edge -->
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges</item>
+        <!-- Dark status bar icons -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+    
+    <!-- Splash Screen theme -->
+    <style name="Theme.Restaurant.Splash">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+</resources>
