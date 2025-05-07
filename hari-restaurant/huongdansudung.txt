@@ -1,0 +1,7 @@
+yêu cầu phải có composer, node js và xampp hoặc khác...
+sau khi tải về thì tạo database trong phpmyadmin 
+tìm file .env trong project và chỉnh sửa thông tin database tài khoản ...
+chạy lệnh composer 'install' và 'npm i' 
+sau đó chạy lệnh 'php artisan migrate' để khởi tạo các bảng mặc định trong laravel
+vào phpmyadmin import file my_website.sql 
+chạy lệnh 'php artisan ser' để khởi động server

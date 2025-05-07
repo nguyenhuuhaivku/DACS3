@@ -1,0 +1,432 @@
+/* Section Container */
+.featured-menu {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1c1c1c 100%);
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+/* Section Header */
+.section-header {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3.5rem;
+    background: linear-gradient(to right, #ffab40, #ff4b1f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 15px rgba(255, 171, 64, 0.2);
+}
+
+.section-header .subtitle {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Category Tabs */
+.category-tabs-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.category-tab {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 171, 64, 0.2);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    color: #ffab40;
+    font-weight: 500;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.category-tab::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffab40, #ff4b1f);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.category-tab:hover::before,
+.category-tab.active::before {
+    opacity: 1;
+}
+
+.category-tab:hover,
+.category-tab.active {
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 171, 64, 0.2);
+}
+
+/* Status Badge Styles - Đồng nhất với menu */
+.status-badge {
+    position: absolute;
+    top: 0px;
+    right: 160px;
+    width: 150px;
+    padding: 8px 0;
+    transform: rotate(-45deg);
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 2;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* Special Badge */
+.status-badge.special {
+    background: linear-gradient(45deg, #ffd700, #ffa500);
+    color: #000;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.status-badge.special i {
+    background: -webkit-linear-gradient(45deg, #ffd700, #ff8c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+/* New Badge */
+.status-badge.new {
+    background: linear-gradient(45deg, #4caf50, #45b649);
+    color: white;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.status-badge.new i {
+    color: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+/* Popular Badge */
+.status-badge.popular {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    border: 1px solid rgba(255, 65, 108, 0.3);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.status-badge.popular i {
+    color: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+/* Hover effects */
+.dish-card:hover .status-badge {
+    transform: rotate(-45deg) translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Badge animations */
+.status-badge i {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.status-badge.special i {
+    animation: rotate 4s infinite linear;
+}
+
+.status-badge.new i {
+    animation: twinkle 1.5s infinite;
+}
+
+.status-badge.popular i {
+    animation: flame 2s infinite;
+}
+
+/* Animation keyframes */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes twinkle {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+@keyframes flame {
+    0% {
+        transform: scale(1) rotate(-5deg);
+    }
+    25% {
+        transform: scale(1.1) rotate(5deg);
+    }
+    50% {
+        transform: scale(1) rotate(-5deg);
+    }
+    75% {
+        transform: scale(1.1) rotate(5deg);
+    }
+    100% {
+        transform: scale(1) rotate(-5deg);
+    }
+}
+
+/* Shine effect */
+.status-badge::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(45deg);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.status-badge:hover::after {
+    animation: shine 1s forwards;
+}
+
+@keyframes shine {
+    0% {
+        opacity: 1;
+        transform: rotate(45deg) translateX(-100%);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translateX(100%);
+    }
+}
+
+/* Glass morphism effect */
+.status-badge::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(4px);
+    z-index: -1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .status-badge {
+        width: 130px;
+        padding: 6px 0;
+        font-size: 0.8rem;
+        left: -32px;
+        top: 15px;
+    }
+}
+
+/* Card styles */
+.dish-card {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dish-card:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(-10deg)
+        translateY(-10px);
+    border-color: rgba(255, 171, 64, 0.3);
+    box-shadow: 20px 30px 40px rgba(0, 0, 0, 0.3);
+}
+
+.dish-image {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.dish-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dish-card:hover .dish-image img {
+    transform: scale(1.15) rotate(-2deg);
+}
+
+/* Overlay effect */
+.overlay {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+/* Badge styles - đồng nhất với menu */
+.menu-item-badge {
+    position: absolute;
+    top: 20px;
+    left: -35px;
+    width: 150px;
+    padding: 8px 0;
+    transform: rotate(-45deg);
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 2;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Badge variations */
+.badge-new {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+}
+
+.badge-new::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.1) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0.1) 75%,
+        transparent 75%,
+        transparent
+    );
+    background-size: 10px 10px;
+}
+
+.badge-popular {
+    background: linear-gradient(45deg, #f7b733, #fc4a1a);
+    color: white;
+}
+
+.badge-special {
+    background: linear-gradient(45deg, #11998e, #38ef7d);
+    color: white;
+}
+
+/* Content styles */
+.dish-content {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.dish-name {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.dish-description {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.dish-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: auto;
+}
+
+.dish-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #ffab40, #ff4b1f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Button styles */
+.add-to-cart-btn {
+    background: linear-gradient(45deg, #ffab40, #ff4b1f);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.add-to-cart-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.add-to-cart-btn:hover::before {
+    left: 100%;
+}
+
+.add-to-cart-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 171, 64, 0.3);
+}

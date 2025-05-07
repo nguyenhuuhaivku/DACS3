@@ -1,0 +1,41 @@
+    .custom-date.d-none {
+        display: none !important;
+    }
+    .card-title {
+        font-weight: bold;
+    }
+
+    .small-box {
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .small-box .icon {
+        top: 10px;
+        right: 10px;
+    }
+
+    .badge {
+        font-size: 0.9em;
+        padding: 0.4em 0.6em;
+    }
+
+    .badge-warning {
+        background-color: #ffc107;
+        color: #000;
+    }
+
+    .badge-secondary {
+        background-color: #6c757d;
+        color: #fff;
+    }
+
+    .table td {
+        vertical-align: middle;
+    }
+
+    .table th,
+    .table td {
+        text-align: center;
+    }
